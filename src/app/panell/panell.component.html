@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+   
+    <form class="form-group row">
+
+      <div class="row">
+        <div class="col-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="me-2" >Numero de paginas </span>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="decrementInput1()">-</button>
+            </div>
+            <input [(ngModel)]="numPaginas" name="numPaginas" (change)="precioTotalPaginas()" class="form-control " min="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="incrementInput1()">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="me-2" >Numero de idiomas </span>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="decrementInput2()" >-</button>
+            </div>
+            <input [(ngModel)]="numIdiomas" name="numIdiomas" (change)="precioTotalPaginas()" class="form-control" min="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="incrementInput2()">+</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </form>
+</div>

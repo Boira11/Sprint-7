@@ -1,0 +1,38 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <input type="checkbox" [(ngModel)]="paginaWebSelected" (change)="actualizarPreuPaginaWeb()">
+      Fer Pagina Web({{getvalorPaginaWeb()}}€)
+      <ng-container *ngIf="paginaWebSelected">
+        <app-panell></app-panell>
+      </ng-container>
+    </div>  
+  </div>
+
+    <div class="row">
+      <div class="col">
+        <!-- <input type="checkbox" class="me-2">Fer una pàgina web ({{valorPaginaWeb}} €) -->
+        <input type="checkbox" [(ngModel)]="campanyaSeoSelected" (change)="actualizarPreuSeo()"> Una consultoria SEO({{getValorCampanyaSeo()}}€)
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <!-- <input type="checkbox" class="me-2">Fer una pàgina web ({{valorPaginaWeb}} €) -->
+        <input type="checkbox" [(ngModel)]="googleAddsSelected" (change)="actualitzarPreuGoogleAdds()"> Una campanya de google Adds({{getValorGoogleAdds()}}€)
+      </div>
+    </div>
+
+    
+    <div class="mt-1">
+        <p>Preu: {{getPreuTotal()}}</p>
+    </div>
+
+    <div>
+      <a href="/welcome" class="btn btn-secondary">Atrás</a>
+    </div>
+  
+
+
+
