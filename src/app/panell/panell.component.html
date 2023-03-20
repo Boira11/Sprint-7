@@ -12,7 +12,7 @@
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button" (click)="decrementInput1()">-</button>
             </div>
-            <input [(ngModel)]="numPaginas" name="numPaginas" (change)="precioTotalPaginas()" class="form-control " min="0">
+            <input [(ngModel)]="numPaginas" name="numPaginas" (change)="precioTotalPaginas()" class="form-control " min="2">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button" (click)="incrementInput1()">+</button>
             </div>
@@ -29,7 +29,7 @@
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button" (click)="decrementInput2()" >-</button>
             </div>
-            <input [(ngModel)]="numIdiomas" name="numIdiomas" (change)="precioTotalPaginas()" class="form-control" min="0">
+            <input [(ngModel)]="numIdiomas" name="numIdiomas" (change)="precioTotalPaginas()" class="form-control" min="1" value="1">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button" (click)="incrementInput2()">+</button>
             </div>

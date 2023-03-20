@@ -31,7 +31,7 @@ export class PanellComponent {
   }
 
   numPaginas = 0;
-  numIdiomas = 0;
+  numIdiomas = 1;
 
   incrementInput1() {
     this.numPaginas++;
@@ -52,7 +52,7 @@ export class PanellComponent {
   }
 
   decrementInput2() {
-    if (this.numIdiomas > 0) {
+    if (this.numIdiomas > 1) {
       this.numIdiomas--;
     }
     this.precioTotalPaginas();
